@@ -4,7 +4,6 @@
 
 ```javascript
 function bubbleSort(array) {
-  // Write your code here.
   let length = array.length;
 
   for (let i = 0; i < length - 1; i++) {
