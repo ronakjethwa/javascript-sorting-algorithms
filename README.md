@@ -22,7 +22,20 @@ function bubbleSort(array) {
 
 ### Insertion Sort
 ```javascript
-
+function insertionSort(array) {
+  // run time --> O(n^2) 
+	let length = array.length;
+	for (let i = 0; i < length;i++){
+		let tmp = array[i];
+		let currentIndex = i;
+		while(currentIndex >= 0 && array[currentIndex-1] > tmp){
+			array[currentIndex] = array[currentIndex-1];
+			currentIndex--;
+		}
+		array[currentIndex] = tmp;
+	}
+	return array;
+}
 ```
 
 ### Selection Sort
