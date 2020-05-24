@@ -19,3 +19,28 @@ function bubbleSort(array) {
   return array;
 }
 ```
+
+### Insertion Sort
+```javascript
+
+```
+
+### Selection Sort
+```javascript
+
+```
+
+### Quick Sort
+```javascript
+
+```
+
+### Heap Sort
+```javascript
+
+```
+
+### Merge Sort
+```javascript
+
+```
