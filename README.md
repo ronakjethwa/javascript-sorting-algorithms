@@ -4,6 +4,7 @@
 
 ```javascript
 function bubbleSort(array) {
+  // run time --> O(n^2) 
   let length = array.length;
 
   for (let i = 0; i < length - 1; i++) {
