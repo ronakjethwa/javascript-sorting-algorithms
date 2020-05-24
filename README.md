@@ -29,7 +29,7 @@ function insertionSort(array) {
   for (let i = 0; i < length; i++) {
     let tmp = array[i];
     let currentIndex = i;
-    while (currentIndex >= 0 && array[currentIndex - 1] > tmp) {
+    while (currentIndex > 0 && array[currentIndex - 1] > tmp) {
       array[currentIndex] = array[currentIndex - 1];
       currentIndex--;
     }
