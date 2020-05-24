@@ -43,7 +43,7 @@ function insertionSort(array) {
 
 ```javascript
 function selectionSort(array) {
-  // Write your code here.
+  // runtime -->  O(n^2)
   let startIdx = 0;
   let length = array.length;
   while (startIdx < length - 1) {
