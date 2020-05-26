@@ -67,6 +67,42 @@ function swap(i, j, array) {
 ### Quick Sort
 
 ```javascript
+function quickSort(array) {
+  let start = 0;
+  let end = array.length - 1;
+  helper(array, start, end);
+  return array;
+}
+
+function helper(array, start, end) {
+  if (start >= end) return;
+  let pivot = start;
+  let left = start + 1;
+  let right = end;
+
+  while (right >= left) {
+    if (array[left] > array[pivot] && array[right] < array[pivot]) {
+      swap(left, right, array);
+    }
+    if (array[left] <= array[pivot]) left++;
+    if (array[right] >= array[pivot]) right--;
+  }
+  swap(pivot, right, array);
+  let tmp = right - start - 1 < end - (right + 1);
+  if (tmp) {
+    helper(array, start, right - 1);
+    helper(array, right + 1, end);
+  } else {
+    helper(array, right + 1, end);
+    helper(array, start, right - 1);
+  }
+}
+
+function swap(i, j, array) {
+  let tmp = array[i];
+  array[i] = array[j];
+  array[j] = tmp;
+}
 ```
 
 ### Heap Sort
